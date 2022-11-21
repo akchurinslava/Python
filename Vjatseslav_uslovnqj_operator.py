@@ -1,11 +1,12 @@
 Vjatseslav_uslovnqj_operator
+
 #NR 1
-a=float(input('Insert number:'))
+a=float(input('Enter number:'))
 if a>0:
 	if a%2==0:
-			print(f'{a} is great number')
+			print(f'{a} is an even number')
 	else:
-		print(f'{a} is not great number')
+		print(f'{a} odd number')
 else:
 	print('Does not work')
 
@@ -17,15 +18,15 @@ c=float(input('Number3 :'))
 if a>0 and b>0 and c>0:
 	if a+b+c==180:
 		if a==b==c==60:
-			print('Ravnostoronnij')
+			print('equilateral triangle')
 		elif a==b or b==c or a==c:
-			print('Ravnobedrennqj')
+			print('Isosceles triangle')
 		else:
-			print('Raznostoronnij')
+			print('Versatile triangle')
 	else:
-		print('Not treugolnik')
+		print('Not triangle')
 else:
-	print('not correct')
+	print('Not correct')
 
 #NR3
 d=input('Do you want decoding [Yes or No]:')
@@ -53,15 +54,52 @@ else:
 
 #NR4
 
-a,b=input(int('Insert day and month:'))
-	if a>21 and a>31 and b==03 or (a>0 and a>=20 and b==04)
-	sign="Baran"
+a=int(input('Enter day:'))
+b=int(input('Enter month:'))
+if a>0 and b>0 and a<=31 and b<=12:
+	if a>=21 and a<=31 and b==3 or a>=1 and a<=20 and b==4:
+		sign="Aries"
+	elif a>=21 and a<=31 and b==4 or a>=1 and a<=21 and b==5:
+		sign="Taurus"
+	elif a>=22 and a<=31 and b==5 or a>=1 and a<=21 and b==6:
+		sign="Gemini"
+	elif a>=22 and a<=31 and b==6 or a>=1 and a<=22 and b==7:
+		sign="Cancer"
+	elif a>=23 and a<=31 and b==7 or a>=1 and a<=21 and b==8:
+		sign="Leo"
+	elif a>=22 and a<=31 and b==8 or a>=1 and a<=23 and b==9:
+		sign="Virgo"
+	elif a>=24 and a<=31 and b==9 or a>=1 and a<=23 and b==10:
+		sign="Libra"
+	elif a>=24 and a<=31 and b==10 or a>=1 and a<=22 and b==11:
+		sign="Scorpio"
+	elif a>=23 and a<=31 and b==11 or a>=1 and a<=22 and b==12:
+		sign="Saggitarius"
+	elif a>=23 and a<=31 and b==12 or a>=1 and a<=20 and b==1:
+		sign="Capricorn"
+	elif a>=21 and a<=31 and b==1 or a>=1 and a<=19 and b==2:
+		sign="Aquarius"
+	elif a>=20 and a<=31 and b==2 or a>=1 and a<=20 and b==3:
+		sign="Pisces"
+	print('Your sign is ' + sign)
+else:
+	print('Incorrect data')
 
 
+#NR5
 
 
-
-
+from math import *
+a=input('Enter value:')
+if a.isalnum():
+	if a.isdigit():
+		c=int(a)/2
+		print(c)
+	elif a.isalpha():
+		print(a)
+else:
+	a==float
+	print(float(a)*0.7)
 
 
 

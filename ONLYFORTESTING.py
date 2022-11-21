@@ -1,6 +1,16 @@
-a=int(input('Insert day:'))
-b=int(input('Insert month:'))
-	if a>=21 and a<=31 and b==3:
-		sign="Oven"
-	elif a>=1 and a<=20 and b==4:
-		sign="Oven"
+from math import *
+a=input('Enter value:')
+if a.isalnum():
+	if a.isdigit():
+		c=int(a)/2
+		print(c)
+	elif a.isalpha():
+		print(a)
+else:
+	a==float
+	print(float(a)*0.7)
+
+
+
+		
+	
