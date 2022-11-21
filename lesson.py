@@ -6,6 +6,10 @@ else:
 	S="ei saa leida"
 print("Pindala:", S)
 
+#a,b,g=input('Insert number:').split() split dajot vozmownostj k perechisleniju
+
+#v=input('here text') 
+## if v.upper()=='YES'
 
 mark=float(input('What mark you had at school:'))
 if mark>=1 or mark<=5:

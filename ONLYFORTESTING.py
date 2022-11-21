@@ -1,14 +1,6 @@
-number=float(input("Insert numnber"))
-if number. isalpha():
-	print('This is text')
-elif number. isdigit():
-	number=float(number)
-	if number>0:
-		if number%2==0:
-			print(f'{number} is great number')
-		else:
-			print(f'{number} not great number')
-	else:
-		print(f'{number} does not exits')
-else:
-	print(f'{number} unreal number')
+a=int(input('Insert day:'))
+b=int(input('Insert month:'))
+	if a>=21 and a<=31 and b==3:
+		sign="Oven"
+	elif a>=1 and a<=20 and b==4:
+		sign="Oven"
