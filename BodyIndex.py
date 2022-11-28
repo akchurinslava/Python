@@ -1,10 +1,11 @@
+
 from math import *
 
 print('Hi! I am your new frined - Python')
 name=input('What is your name :)? :')
 print(name, 'So beatiful name')
-name1=int(input('Can I calculate your body index? [0 - no; 1 - yes]:'))
-if name1==1:
+name=int(input('Can I calculate your body index? [0 - no; 1 - yes]:'))
+if name==1:
 	while True:
 		height=input('Please enter your height:')
 		try:
@@ -42,6 +43,3 @@ else:
 	print("So sad, this is usefull information")
 	print()
 print('See your soon, '+str(name)+ '! I will be wait, your Python!')
-	
-
-	
