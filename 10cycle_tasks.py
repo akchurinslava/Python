@@ -97,12 +97,11 @@ print(y)
 #task12
 a=int(input('Enter number of lawn mowers:'))
 b=int(input('Hours of first lawn mower worked:'))
-b_1=0
-for i in range(1,a):
-	i=b*60+10*i
-	b_1=i+b_1
-	b=b*60+b_1
-	print(b)
+c1=b*60
+for i in range(1, a):
+	c1+=10
+print(c1)
+#task13
 
 
 

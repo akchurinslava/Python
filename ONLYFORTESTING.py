@@ -1,15 +1,6 @@
-from math import *
-for i in range(1, 1001):
-	if i%7==0:
-		
-
-
-
-
-from math import *
-c=int(input('Enter a number:'))
-a=0
-for x in range(1,c+1):
-	a=x+a
-print(a)
-		
+a=int(input('Enter number of lawn mowers:'))
+b=int(input('Hours of first lawn mower worked:'))
+c1=b*60
+for i in range(1, a):
+	c1+=10
+print(c1)
