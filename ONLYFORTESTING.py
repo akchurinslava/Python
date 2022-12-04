@@ -1,8 +1,15 @@
-j=0
-i=0
-while i<15:
-	i+=1
-	a=float(input(f'{i} Enter A: '))
-	if int(a)==a:
-		j+=1
-print(j)
+from math import *
+for i in range(1, 1001):
+	if i%7==0:
+		
+
+
+
+
+from math import *
+c=int(input('Enter a number:'))
+a=0
+for x in range(1,c+1):
+	a=x+a
+print(a)
+		
