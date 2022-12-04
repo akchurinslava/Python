@@ -1,6 +1,9 @@
-a=int(input('Enter number of lawn mowers:'))
-b=int(input('Hours of first lawn mower worked:'))
-c1=b*60
-for i in range(1, a):
-	c1+=10
-print(c1)
+a=input('Enter two two-digit number one after other:')
+b=(a[0:2])
+c=(a[2:4])
+b1=int(b)
+c1=int(c)
+a1=int(a)
+
+y=a1/(b1*c1)
+print(y)

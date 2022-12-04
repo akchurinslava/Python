@@ -74,7 +74,7 @@ for i in range(s*12):
 	n+=z
 	output=n
 print(output)
-#task10
+#task10!!!
 z=0
 while z!=10:
 	z+=1
@@ -94,7 +94,7 @@ for i in range(1, 100):
         if i%a == 0:
             y *= i
 print(y)
-#task12
+#task12!!!!
 a=int(input('Enter number of lawn mowers:'))
 b=int(input('Hours of first lawn mower worked:'))
 c1=b*60
@@ -102,10 +102,103 @@ for i in range(1, a):
 	c1+=10
 print(c1)
 #task13
+j=0
+summ=0
+for i in range(105, 1001,7):
+	summ+=i
+	j+=1
+print(j)
+print(summ)
+#task14
+a=int(input('Enter N value:'))
+b=1
+for i in range(1, a):
+	b*=i
+print(b)
+#task15
+j=0
+while True:
+	j+=1
+	print('0 1 2 3 4 5 6 7 8 9')
+	if j==10:break
+#task16!!!!!
 
 
+#task17
+a=2
+i=1
+i_2=0
+c=0
+while True:
+	c+=1
+	i_2+=i
+	y=a*i_2
+	if c==9:break
+	print(str(a) + '*'+str(i_2)+ '=' +str(y))
+#task18
+for i in range(20, 51):
+	if i%3==0 and i%5!=0:
+		print(i)
+#task19
+for i in range(35, 87):
+	if i%7==1 and i%7==2 or i%7==5:
+		print(i)
+#task20
+a=0
+for i in range(1, 50):
+	if i%7==0 or i%5==0:
+		a+=i
+print(a)
+#task21!!!
+q=0
+while q!=10:
+	q+=1
+	i=int(input(f"Enter number {q}:"))
+	if i<0:
+		b=abs(i)
+		print(b)
+	else:
+		print(i)
+#task22
+a=0
+for i in range(100, 201):
+  if i%17==0:
+    a+=i
+print(a)
+#task23 !!!!
 
+#task24
+y=[]
+a=int(input('Enter number of students:'))
+j=0
+for i in range(1, a+1):
+  j+=1
+  b=int(input(f'Enter {j} student height:'))
+  y.append(b)
+  c=sum(y)
+  c1=c/a
+print(c1)
+#task25
+y=[]
+a=int(input('Enter a number:'))
+for i in range(1, a+1):
+  if a>0:
+    if i%2!=0 and i%3!=0 and i%5!=0:
+      y.append(i)
+      c=len(y)
+print(c)
+#task26
+a=input('Enter two two-digit number one after other:')
+b=(a[0:2])
+c=(a[2:4])
+b1=int(b)
+c1=int(c)
+a1=int(a)
 
+y=a1/(b1*c1)
+print(y)
+
+#task27
 
 
 
