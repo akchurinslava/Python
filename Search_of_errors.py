@@ -30,7 +30,7 @@ else:
         b+=n
     print('Inversed number is:', b)
     print()
-    print('Check hypotyse of Sirakuz')
+    print('Check hypothesis of Syracuse')
     print()
     if c%2==0:
         print(c, 'even number')
@@ -43,4 +43,4 @@ else:
             c=(3*c+1)/2
         print(int(c), end=" ")
     print()
-    print('Hypotyse is right')
+    print('Hypothesis is right')
