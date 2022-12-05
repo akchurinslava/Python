@@ -85,6 +85,22 @@ while z!=10:
 			print(a)
 		elif a<b:
 			print(b)
+#task10 v2
+from math import *
+from random import *
+text=''
+for i in range(1, 11):
+	a1=randint(-100,100)
+	a2=randint(-100,100)
+	if a1>a2:
+		print(f'{a1} is bigger then {a2}')
+		text+=' 'str(a1)
+	elif a2>a1:
+		print(f'{a2} is bigger then {a1}')
+		text+=' 'str(a2)
+	else:
+		print(f'{a1} and {a2} are equal')
+print(text)
 #task11
 from random import *
 y = 1
@@ -101,6 +117,16 @@ c1=b*60
 for i in range(1, a):
 	c1+=10
 print(c1)
+#task12 v2
+n=int(input('Number of ***'))
+m=int(input('Min'))
+m*=60
+summ=o
+
+for i in range(1. n):
+	summ+=m
+	m+=10
+print(m)
 #task13
 j=0
 summ=0
@@ -122,8 +148,13 @@ while True:
 	print('0 1 2 3 4 5 6 7 8 9')
 	if j==10:break
 #task16!!!!!
-
-
+for r in range(9):
+	for i in range(9):
+			if r==c:
+				print(r+1, end='')
+			else:
+				print(0,end='')
+	print()
 #task17
 a=2
 i=1
