@@ -19,7 +19,7 @@ if name==1:
 			mass=input('Please enter your weight:')
 			mass=float(mass)
 		except:
-			print('Mass must be integer of float')
+			print('Mass must be integer or float')
 	try:
 		index=round(float(mass/((0.01*height)*(0.01*height))), 1)
 		print('Your body index is: '+str(index))
