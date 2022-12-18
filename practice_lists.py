@@ -37,8 +37,35 @@ else:
 	c=='9'
 	print('Location - Laanemaa, Hiiumaa, Saaremaa')
 	print('Wear a mask')
-#task2
 
+#task2 version1
+from math import *
+from random import *
+
+
+a=list(map(int, input('Please enter list separated by [,]:').split(',')))
+b=int(input('Enter how much times we are doing a castling of the letter:'))
+c=-1
+
+for i in range(b):
+	a[i], a[c]=a[c], a[i]
+	c-=1
+print(a)
+
+
+#task2 version2
+from math import *
+from random import *
+
+
+a=[1,2,3,4,5,6,7,8]
+b=int(input('Enter how much times we are doing a castling of the letter:'))
+c=-1
+
+for i in range(b):
+	a[i], a[c]=a[c], a[i]
+	c-=1
+print(a)
 
 
 
@@ -135,5 +162,12 @@ for i in a:
 		vowel+=1
 	else:
 		consonants+=1
+print('In your name '+str(vowel)+ ' vowel letters!')
+print('In your name '+str(consonants)+ ' consonant letters!')
 q=sorted(list(a),key=str)
-print(q)
+q_true=[]
+for i in q:
+	if i not in q_true:
+		q_true.append(i)
+
+print(str(q_true))

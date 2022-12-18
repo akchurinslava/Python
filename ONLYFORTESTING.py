@@ -1,23 +1,18 @@
 from math import *
 from random import *
 
-while True:
-	a=input('Enter your name:')
-	if a.isalpha():
-		list(a)
-		break
-c=str.capitalize(a)
-print('Hello ' + c +' !')
-b=len(a)
-print('Your name content '+str(b)+' letters')
-vowel=0
-consonants=0
-all_vowel=['a','e','i','o','u']
-for i in a:
-	if i in all_vowel:
-		vowel+=1
-	else:
-		consonants+=1
-q=sorted(list(a),key=str)
-print(q)
+
+list1=['fdsfdsfs', 'dsgdbevdfv', 'gdfgdfccsd']
+list2=['fdsapwqesfs', 'dsvdfv', 'dfccsd']
+list3=['fdss', 'dvdfv', 'gmnbnvbfccsd']
+max1 = len(max(list1, key = len))
+max2 = len(max(list2, key = len))
+max3 = len(max(list3, key = len))
+
+
+print([(max1 - len(x))*'_' + x for x in list1])
+print([(max2 - len(x))*'_' + x for x in list2])
+print([(max3 - len(x))*'_' + x for x in list3])
+
+
 
