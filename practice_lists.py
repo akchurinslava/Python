@@ -99,7 +99,7 @@ elif b=='2':
 	a.sort(reverse=True)
 	print(a)
 else:
-	print('Only 1 or')
+	print('Only 1 or 2')
 
 #task4 version2
 from math import *
@@ -117,7 +117,7 @@ elif b=='2':
 	a.sort(key=int, reverse=True)
 	print(a)
 else:
-	print('Only 1 or')
+	print('Only 1 or 2')
 
 #task4 version3
 from math import *
@@ -133,9 +133,21 @@ elif b=='2':
 	c.sort(reverse=True)
 	print(a)
 else:
-	print('Only 1 or')
+	print('Only 1 or 2')
 
 #task5
+
+from math import *
+from random import *
+
+
+list1=['fdsfdsfs', 'dsgevdfv', 'gdfgdfccsd']
+list2=['fdsapwqesfs', 'dsvdfv', 'dfccsd']
+list3=['fdss', 'dvdfv', 'gmnbnvbfccsd']
+
+print([x.ljust(len(max(list1, key = len)), '_') for x in list1])
+print([x.ljust(len(max(list2, key = len)), '_') for x in list2])
+print([x.ljust(len(max(list3, key = len)), '_') for x in list3])
 
 
 
