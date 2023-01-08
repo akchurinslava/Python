@@ -94,10 +94,8 @@ for i in range(1, 11):
 	a2=randint(-100,100)
 	if a1>a2:
 		print(f'{a1} is bigger then {a2}')
-		text+=' 'str(a1)
 	elif a2>a1:
 		print(f'{a2} is bigger then {a1}')
-		text+=' 'str(a2)
 	else:
 		print(f'{a1} and {a2} are equal')
 print(text)
@@ -121,9 +119,9 @@ print(c1)
 n=int(input('Number of ***'))
 m=int(input('Min'))
 m*=60
-summ=o
+summ=0
 
-for i in range(1. n):
+for i in range(1, n):
 	summ+=m
 	m+=10
 print(m)
