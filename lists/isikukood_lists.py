@@ -1,4 +1,5 @@
 from datetime import *
+from my_module import *
 while True:
 	ik=input('Isikukood:')
 	if len(ik)==11:
@@ -64,9 +65,8 @@ while True:
 		print('Isikukood must be 11 symbols')
 
 
-
 ###
-from untitled import *
+from my_module import *
 from datetime import *
 while True:
 	ik=input('Isikukood:')
