@@ -82,13 +82,17 @@ def is_prime(a:int):
     """
     Enter number from 0 to 1000
     Return True if prime number and False if not
-    :param float a: entered number
+    :param int a: entered number
+    :param bool b: returned value
     :rtype: bool
     """
     a=int(a)
-    for i in range(1, a+1):
-        if a%i==0:
-            b=False
-        else:
-            b=True
-    
+    if a>=0 and a<=1000:
+        for i in range(2, a+1):
+            if a%i==0:
+                b=False
+            else:
+                b=True
+    else:
+        b=('Incorrect number')
+    return b
