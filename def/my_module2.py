@@ -78,9 +78,30 @@ def bank(a:float, years:int):
     S=a*(1+0.1)**years
     return S
 
+def help_is_prime(a:int):
+    """
+    This is small script help us make task 6
+    Calculate zeros and return to us answer if zeros>2 - False
+    :param int a: input number
+    :param int b: calculated zeros
+    :param bool c: returned value
+    :rtype: bool
+    """
+    a=int(a)
+    b=0
+    for i in range(2, a+1):
+        if a%i==0:
+            b+=1
+            if b>2:
+                c=False
+            else:
+                c=True
+    return c
+
 def is_prime(a:int):
     """
     Enter number from 0 to 1000
+    Here we use help module named "help_is_prime()" for info check it above
     Return True if prime number and False if not
     :param int a: entered number
     :param bool b: returned value
@@ -88,11 +109,55 @@ def is_prime(a:int):
     """
     a=int(a)
     if a>=0 and a<=1000:
-        for i in range(2, a+1):
-            if a%i==0:
-                b=False
-            else:
-                b=True
+        b=help_is_prime(a)
     else:
         b=('Incorrect number')
     return b
+
+
+def help_date(a:int, b:int, c:int):
+    """
+    This is small support script for "def date()"
+    Help calculate leap year
+    Return True or False
+    :param int a,b,c: day,month,year
+    :param bool answ: returned value
+    :rtype: bool
+    """
+    if c%4==0 and b==2 and a<=29:
+        answ=True
+    elif c%4!=0 and b==2 and a<=28:
+        answ=True
+    return answ
+
+
+def date(a:int, b:int, c:int):
+    """
+    This is calender check module
+    Module check date if it is real return to us answer
+    Return True or False
+    :param init a,b,c:day,month,year
+    :param bool asnw:
+    :rtype: bool
+    """
+    try:
+        a=int(a)
+        b=int(b)
+        c=int(c)
+        if a<=31 and a>0 and c>0 or b==3 or b==5 or b==1 or b==7 or b==8 or b==10 or b==12:
+            answ=True
+        elif a>30 and a>0 and c>0 or b==4 or b==5 or b==9 or b==11:
+            answ=False
+        elif a<=30 and a>0 and c>0 or b==4 or b==5 or b==9 or b==11:
+            answ=True
+        elif c%4!=0 and b==2 and a==29 and c>0:
+            answ=False
+        elif help_date(a, b, c) and c>0:
+            answ=True
+    except:
+        answ=print('Enter correct data')
+    return answ
+
+
+
+

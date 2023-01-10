@@ -32,5 +32,13 @@ a=bank(input(), input())
 print(a)
 
 #6
+from my_module2 import *
 
+a=is_prime(input())
+print(a)
 
+#7
+from my_module2 import *
+a=date(input(),input(),input())
+if a!=None:
+    print(a)

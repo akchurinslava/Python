@@ -1,3 +1,4 @@
 from my_module2 import *
-a=is_prime(input())
-print(a)
+a=date(input(),input(),input())
+if a!=None:
+    print(a)
