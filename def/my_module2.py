@@ -165,12 +165,12 @@ def special_key(a:str):
         c1=int(c)
     return c1
 
-def XOR_cipher(password:str, key:int):
+def XOR_cipher(password:str, key):
     crypted=''
     for i in password:
         crypted+=chr(ord(i)^key)
     return crypted
 
-def XOR_uncipcher(crypted:str, key:int):
+def XOR_uncipcher(crypted:str, key):
     decrypted=XOR_cipher(crypted, key)
     return decrypted
