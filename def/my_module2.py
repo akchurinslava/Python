@@ -159,5 +159,12 @@ def date(a:int, b:int, c:int):
     return answ
 
 
+def XOR_cipher(password:str, key:int):
+    crypted=''
+    for i in password:
+        crypted+=chr(ord(i)^key)
+    return crypted
 
-
+def XOR_uncipcher(crypted:str, key:int):
+    decrypted=XOR_cipher(crypted, key)
+    return decrypted
