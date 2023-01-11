@@ -158,6 +158,12 @@ def date(a:int, b:int, c:int):
         answ=print('Enter correct data')
     return answ
 
+def special_key(a:str):
+    c=0
+    for i in a:
+        c+=ord(i)
+        c1=int(c)
+    return c1
 
 def XOR_cipher(password:str, key:int):
     crypted=''
